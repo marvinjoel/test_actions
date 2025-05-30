@@ -1,0 +1,15 @@
+name: "Deploy Codigo test"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  test-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hacemos pull del codigo"
+      - run: echo "Correr migraciones"
+      - run: echo "Genera binario"
+      - run: echo "Publicar version"
+      - run: echo "Publicar version en main"
