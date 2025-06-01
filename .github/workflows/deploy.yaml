@@ -7,9 +7,11 @@ on:
 jobs:
   test-actions:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo "Hacemos pull del codigo"
-      - run: echo "Correr migraciones"
-      - run: echo "Genera binario"
-      - run: echo "Publicar version"
-      - run: echo "Publicar version en main"
+      - name: "Hello world"
+        run: echo "Correr migraciones"
+      - name: "dime la fecha"
+        run: date
+      - name: Muestra el contenido del directorio
+        run: ls -la
